@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <Pane minHeight="590.0" minWidth="593.0" prefHeight="590.0" prefWidth="593.0" style="-fx-background-color: rgba(189, 195, 199,0.8); -fx-min-height: 680; -fx-min-width: 620;" styleClass="bodybg" stylesheets="@listStyle.css">
+         <children>
+            <VBox layoutX="70.0" layoutY="91.0" prefHeight="477.0" prefWidth="480.0" style="-fx-spacing: 15; -fx-background-color: rgba(149, 165, 166,0.7); -fx-padding: 50;">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-spacing: 10;">
+                     <children>
+                        <ImageView fitHeight="41.0" fitWidth="74.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/userIcon.png" />
+                           </image>
+                        </ImageView>
+                        <TextField fx:id="userNameField" minHeight="34.0" prefHeight="41.0" prefWidth="337.0" promptText="User Name" style="-fx-min-height: 35;" />
+                     </children>
+                  </HBox>
+                  <Label fx:id="userNameEmptyMessage" prefHeight="20.0" prefWidth="375.0" text="* Field is required" textFill="#ff1500">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-spacing: 10;">
+                     <children>
+                        <ImageView fitHeight="41.0" fitWidth="74.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/ipIcon.png" />
+                           </image>
+                        </ImageView>
+                        <TextField fx:id="ipAddrField" minHeight="34.0" prefHeight="41.0" prefWidth="330.0" promptText="IP Address" style="-fx-min-height: 35;" />
+                     </children>
+                  </HBox>
+                  <Label fx:id="ipaddrEmptyMessage" prefHeight="20.0" prefWidth="375.0" text="* Field is required" textFill="#ff1500">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-spacing: 10;">
+                     <children>
+                        <ImageView fitHeight="40.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/portIcon.png" />
+                           </image>
+                        </ImageView>
+                        <TextField fx:id="portField" prefHeight="41.0" prefWidth="334.0" promptText="Port Number To Connect" style="-fx-min-height: 35;" />
+                     </children>
+                  </HBox>
+                  <Label fx:id="portNoEmptyMessage" prefHeight="20.0" prefWidth="375.0" text="* Field is required" textFill="#ff1500">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+                  <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-spacing: 10;">
+                     <children>
+                        <ImageView fitHeight="41.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/portIcon2.png" />
+                           </image>
+                        </ImageView>
+                        <TextField fx:id="clientPortField" prefHeight="41.0" prefWidth="330.0" promptText="Port Number To Listen" style="-fx-min-height: 35;" />
+                     </children>
+                  </HBox>
+                  <Label fx:id="portNoToListenEmptyMessage" prefHeight="20.0" prefWidth="375.0" text="* Field is required" textFill="#ff1500">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-spacing: 50; -fx-padding: 10;">
+                     <children>
+                        <Button fx:id="submitButton" mnemonicParsing="false" style="-fx-background-color: rgb(39, 174, 96); -fx-text-fill: #ffffff; -fx-border-radius: 10;" text="Submit">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="resetButton" mnemonicParsing="false" style="-fx-background-color: rgb(231, 76, 60); -fx-text-fill: #ffffff;" text="Reset All Field">
+                           <font>
+                              <Font size="16.0" />
+                           </font></Button>
+                     </children>
+                  </HBox>
+               </children>
+               
+               
+               
+               
+               </VBox>
+            <HBox layoutX="70.0" layoutY="28.0" prefHeight="64.0" prefWidth="480.0" style="-fx-spacing: 20; -fx-background-color: rgba(41, 128, 185,1.0);">
+               <children>
+                  <Label prefHeight="64.0" prefWidth="480.0" text="App Name - An Awsome App!!!" textAlignment="CENTER" textFill="#fffdfd">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <padding>
+                        <Insets left="15.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+         </children></Pane>
+   </children>
+</AnchorPane>
